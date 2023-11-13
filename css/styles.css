@@ -607,7 +607,9 @@ address {
 }
 
 .modal-close-btn {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 24px;
   right: 24px;
   padding: 0;
@@ -616,8 +618,9 @@ address {
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: #d9d9d9;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #e7e9fc;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn-icon {
@@ -627,7 +630,8 @@ address {
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background-color: #4d5ae5;
+  background-color: #404bbf;
+  border: none;
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,
@@ -663,6 +667,8 @@ address {
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 38px;
+  background-color: transparent;
+  outline: transparent;
 }
 
 .review-form-field-input:focus {
@@ -681,6 +687,10 @@ address {
 
 .review-form-field-wrapper {
   margin-bottom: 8px;
+}
+
+.wrapper-textarea {
+  margin-bottom: 16px;
 }
 
 .review-form-field-icon {
@@ -704,6 +714,8 @@ address {
   padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
 }
 
 .review-form-mesagge::placeholder {
@@ -723,7 +735,7 @@ address {
 .review-form-checkbox-label {
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -731,7 +743,9 @@ address {
 .pravacy-policy-link {
   color: #4d5ae5;
   text-decoration: underline;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-own-checkbox {
@@ -751,7 +765,8 @@ address {
   + .review-form-checkbox-label
   .review-form-own-checkbox {
   background-color: #404bbf;
-  fill: #ffffff;
+  fill: #f4f4fd;
+  border: none;
 }
 
 .review-form-btn {
