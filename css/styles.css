@@ -607,6 +607,7 @@ address {
 }
 
 .modal-close-btn {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
